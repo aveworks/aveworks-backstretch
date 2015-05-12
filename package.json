@@ -1,7 +1,7 @@
 {
-  "name": "ng-backstretch",
-  "version": "v0.1.2-beta",
-  "description": "A native Angular directive derived from the jQuery Backstretch plugin (http://srobbin.com/jquery-plugins/backstretch)",
+  "name": "aveworks-backstretch",
+  "version": "v0.1.0",
+  "description": "A native Angular directive derived from the jQuery Backstretch plugin (http://srobbin.com/jquery-plugins/backstretch) original implementation from (https://github.com/rprovost/ng-backstretch)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
