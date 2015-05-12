@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rprovost/ng-backstretch.git"
+    "url": "https://github.com/aveworks/aveworks-backstretch"
   },
   "keywords": [
     "angular",
     "modules"
   ],
-  "author": "Ryan Provost",
+  "author": "Angelos Veglektsis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rprovost/ng-backstretch/issues"
+    "url": "https://github.com/aveworks/aveworks-backstretch/issues"
   },
-  "homepage": "https://github.com/rprovost/ng-backstretch",
+  "homepage": "https://github.com/aveworks/aveworks-backstretch/",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-copy": "^0.7.0",
