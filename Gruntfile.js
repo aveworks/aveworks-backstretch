@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          'dist/ng-backstretch.min.js': ['src/ng-backstretch.js']
+          'dist/aveworks-backstretch.min.js': ['src/aveworks-backstretch.js']
         }
       }
     },
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     copy: {
       source: {
         files: [
-          {'dist/ng-backstretch.js': ['src/ng-backstretch.js']}
+          {'dist/aveworks-backstretch.js': ['src/aveworks-backstretch.js']}
         ]
       }
     },
