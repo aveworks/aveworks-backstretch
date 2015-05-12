@@ -1,8 +1,8 @@
 /*!
- * ng-backstretch
- * https://github.com/rprovost/ng-backstretch
+ * aveworks-backstretch
+ * https://github.com/aveworks/aveworks-backstretch
  *
- * Copyright (c) 2014-2015 Ryan Provost
+ * Copyright (c) 2015 Angelos Veglektsis
  * Licensed under the MIT license.
  */
 angular.module('aveworks.directives', []).
