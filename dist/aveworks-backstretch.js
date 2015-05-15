@@ -219,7 +219,6 @@ directive('aveworksBackstretch', ['$window', '$timeout', function($window, $time
 
 				// only one image
 				scope.image.css({ opacity: 1 });
-				console.log(scope.image , scope.image.css('opacity'));
 
 				if (images.length === 1) {
 					return;
