@@ -1,6 +1,6 @@
 {
   "name": "aveworks-backstretch",
-  "version": "v0.3.1",
+  "version": "v0.3.2",
   "description": "A native Angular directive derived from the jQuery Backstretch plugin (http://srobbin.com/jquery-plugins/backstretch) original implementation from (https://github.com/rprovost/ng-backstretch)",
   "main": "index.js",
   "scripts": {
