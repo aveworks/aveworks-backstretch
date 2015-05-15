@@ -20,7 +20,7 @@ directive('aveworksBackstretch', ['$window', '$timeout', function($window, $time
 			var duration = 5000;
 			var fade = 1;
 
-			var transitionOnResize = false;
+			var transitionOnResize = true;
 
 			/* STYLES
 			 * 
@@ -202,6 +202,8 @@ directive('aveworksBackstretch', ['$window', '$timeout', function($window, $time
 				scope.wrapper.find("img").css(background_css);
 
 				if(!transitionOnResize){
+					// not working properly
+					// with this timeout, in show the fade is zero
 					$timeout(function(){
 						scope.wrapper.find("img").css('transition' , 'all ' + fade + 's');
 					});
