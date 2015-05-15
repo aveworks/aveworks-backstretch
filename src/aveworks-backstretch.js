@@ -93,6 +93,12 @@ directive('aveworksBackstretch', ['$window', '$timeout', function($window, $time
 
 			scope.removeImageElements = function (hideWrapper) {
 				scope.wrapper.find("img").remove();
+
+				if(timeoutPromise) {
+					$timeout.cancel(timeoutPromise);
+					timeoutPromise = null;
+				}
+
 				if (hideWrapper) {
 					scope.wrapper.css("display", "none");
 				}
@@ -204,30 +210,25 @@ directive('aveworksBackstretch', ['$window', '$timeout', function($window, $time
 
 			};
 
-			var timeoutId = null;
+			var timeoutPromise = null;
 			scope.show = function() {
-				if(timeoutId)return;
+				if(timeoutPromise)return;
 
 				var element = scope.wrapper.children()[scope.index];
 				scope.image = angular.element(element);
 
 				// only one image
+				scope.image.css({ opacity: 1 });
+				console.log(scope.image , scope.image.css('opacity'));
+
 				if (images.length === 1) {
-					scope.image.css({
-						opacity: 1
-					});
 					return;
 				}
 
 
-				// show the image since it's finished loading
-				scope.image.css({
-					opacity: 1
-				});
-
 				// hide it once the duration has been reached
-				timeoutId = $timeout(function() {
-					timeoutId = null;
+				timeoutPromise = $timeout(function() {
+					timeoutPromise = null;
 
 					scope.image.css({
 						opacity: 0
